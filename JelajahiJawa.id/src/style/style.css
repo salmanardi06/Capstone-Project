@@ -25,6 +25,7 @@ nav {
 .logo {
     font-size: 24px;
     font-weight: bold;
+    padding-left: 15px;
 }
 
 /* Style for navigation links */
