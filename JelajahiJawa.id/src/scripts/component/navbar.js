@@ -70,7 +70,6 @@ class Navbar extends HTMLElement {
                 background-color: #241111;
                 padding: 10px;
                 position: absolute;
-                opacity: 0.9;
                 top: 60px; 
                 left: 0;
                 right: 0;
