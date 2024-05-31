@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebudayaan Jawa Timur</title>
+    <link rel="icon" href="/asset/img/icontab.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="../style/jawatimur.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JelajahiJawa.id</div>
+            <button class="toggle-button">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="/">Beranda</a></li>
+                <li><a href="/eksplorasi.html" class="active">Eksplorasi</a></li>
+                <li><a href="/tentang.html">Tentang</a></li>
+            </ul>            
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Selamat Datang di Kebudayaan Jawa Timur</h1>
+            <p>Kebudayaan di Jawa Timur sangat kaya dan beragam, mencakup berbagai tradisi, seni, dan upacara adat yang memiliki nilai historis dan sosial tinggi. 
+                Beberapa contoh kebudayaan yang terkenal adalah Reog Ponorogo, sebuah tarian tradisional yang menampilkan penari dengan topeng besar berbentuk kepala singa yang dihiasi bulu merak, serta Karapan Sapi, 
+                sebuah lomba balap sapi khas Madura yang menarik perhatian banyak orang. Selain itu, Jawa Timur juga memiliki seni pertunjukan seperti Ketoprak, yang merupakan teater rakyat yang menggabungkan unsur drama, tari, 
+                dan musik untuk menceritakan kisah-kisah sejarah dan mitos. Upacara adat seperti Yadnya Kasada yang dilakukan oleh masyarakat Tengger di Gunung Bromo juga merupakan bagian penting dari kebudayaan Jawa Timur, 
+                di mana sesaji diberikan ke kawah gunung sebagai bentuk rasa syukur dan permohonan keselamatan. Festival Bandeng di Gresik, yang menghormati ikan bandeng dengan berbagai kegiatan, menunjukkan kekayaan tradisi kuliner di daerah ini. 
+                Keberagaman budaya ini mencerminkan kekayaan dan keanekaragaman warisan budaya Jawa Timur yang terus dipelihara dan dikembangkan oleh masyarakatnya hingga kini</p>
+        </section>
+        <section class="content">
+            <div class="card">
+                <h2>Adat Istiadat</h2>
+                <img id="adat-img" src="../../asset/img-jatim/karapansapi.jpg" alt="Adat Istiadat Jawa Barat">
+                
+                <h3 id="adat-title">1. Karapan Sapi</h3>
+                <p id="adat-desc">Tradisi balap sapi yang populer di Madura, di mana sapi-sapi berlomba menarik kereta kecil dengan kecepatan tinggi. 
+                    Tradisi ini biasanya diadakan sebagai bagian dari perayaan atau festival tertentu.</p>
+                <div class="button-container">
+                    <button onclick="prevAdat()">&#9664;</button>
+                    <button onclick="nextAdat()">&#9654;</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Tradisi</h2>
+                <img id="tradisi-img" src="../../asset/img-jatim/ketoprak.jpg" alt="Tradisi Jawa Barat">
+                <h3 id="tradisi-title">1. Ketoprak</h3>
+                <p id="tradisi-desc">Pertunjukan teater rakyat yang menggabungkan drama, tari, 
+                    dan musik untuk menceritakan kisah sejarah dan mitos dari Jawa.</p>
+                <div class="button-container">
+                    <button onclick="prevTradisi()">&#9664;</button>
+                    <button onclick="nextTradisi()">&#9654;</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Seni</h2>
+                <img id="seni-img" src="../../asset/img-jatim/tariremo.jpg" alt="Seni Jawa Barat">
+                <h3 id="seni-title">1. Tari Remo</h3>
+                <p id="seni-desc"> Tarian selamat datang yang biasanya ditampilkan pada acara-acara resmi dan menyambut tamu penting. 
+                    Tari Remo ditandai dengan gerakan yang dinamis dan kostum yang mencolok.</p>
+                <div class="button-container">
+                    <button onclick="prevSeni()">&#9664;</button>
+                    <button onclick="nextSeni()">&#9654;</button>
+                </div>
+            </div>            
+            <div class="card">
+                <h2>Bahasa</h2>
+                <h3 id="bahasa-title">1. Bahasa Jawa</h3>
+                <p id="bahasa-desc">Dialek Arekan: Digunakan di Surabaya dan sekitarnya, termasuk Malang dan Gresik.
+                    Dialek Mataraman: Digunakan di wilayah Mataraman seperti Madiun, Kediri, dan sebagian Ponorogo.Dialek Osing: Digunakan oleh masyarakat di Banyuwangi.</p>
+                <div class="button-container">
+                    <button onclick="prevBahasa()">&#9664;</button>
+                    <button onclick="nextBahasa()">&#9654;</button>
+                </div>
+            </div>            
+            <div class="card">
+                <h2>Nilai-Nilai Budaya</h2>
+                <h3 id="nilai-budaya-title">1. Gotong Royong</h3>
+                <p id="nilai-budaya-desc">Nilai ini mengajarkan pentingnya kerja sama dan kebersamaan dalam melakukan berbagai kegiatan komunitas. Contohnya adalah kegiatan membangun infrastruktur desa secara bersama-sama.</p>
+                <div class="button-container">
+                    <button onclick="prevNilaiBudaya()">&#9664;</button>
+                    <button onclick="nextNilaiBudaya()">&#9654;</button>
+                </div>
+            </div>
+        </section>
+        <div class="center-text">
+            <h3>Video tentang Kebudayaan Jawa Timur</h3>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6XhIZdbzfgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>                
+    </main>
+    <footer>
+        <p>&copy; 2024 JelajahiJawa.id. All Rights Reserved.</p>
+    </footer>
+    <script src="../scripts/jawatimur.js"></script>
+</body>
+</html>

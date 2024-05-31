@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebudayaan Jawa Barat</title>
+    <link rel="stylesheet" href="../style/jawabarat.css">
+    <link rel="icon" href="/asset/img/icontab.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JelajahiJawa.id</div>
+            <button class="toggle-button">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="/">Beranda</a></li>
+                <li><a href="/eksplorasi.html" class="active">Eksplorasi</a></li>
+                <li><a href="/tentang.html">Tentang</a></li>
+            </ul>            
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Selamat Datang di Kebudayaan Jawa Barat</h1>
+            <p>Kebudayaan Jawa Barat mencakup berbagai aspek kehidupan yang kaya dan beragam, mulai dari adat istiadat seperti upacara Seren Taun dan Ngabungbang, 
+                hingga tradisi seperti Pencak Silat dan Rengkong. Seni di Jawa Barat meliputi pertunjukan Wayang Golek, tarian Jaipong, dan musik Angklung yang telah diakui UNESCO. Bahasa Sunda, dengan beberapa dialek regional, 
+                digunakan dalam komunikasi sehari-hari dan upacara adat. Masyarakat Jawa Barat menjunjung tinggi nilai-nilai budaya seperti gotong royong, sopan santun, dan tata krama, yang tercermin dalam interaksi sosial dan 
+                kehidupan sehari-hari. Seluruh elemen ini membentuk identitas masyarakat Jawa Barat dan menjadi bagian penting dari warisan budaya Indonesia, yang perlu dilestarikan dan dikenalkan kepada generasi muda.</p>
+        </section>
+        <section class="content">
+            <div class="card">
+                <h2>Adat Istiadat</h2>
+                <img id="adat-img" src="/asset/img-jawabarat/serentaun.jpg" alt="Adat Istiadat Jawa Barat">
+                <h3 id="adat-title">1. Seren Taun</h3>
+                <p id="adat-desc">Upacara adat tahunan yang diadakan oleh masyarakat Sunda untuk merayakan hasil panen dan bersyukur kepada Tuhan Yang Maha Esa. 
+                    Upacara ini biasanya melibatkan berbagai ritual, tari-tarian, dan permainan tradisional.</p>
+                <div class="button-container">
+                    <button onclick="prevAdat()">&#9664;</button>
+                    <button onclick="nextAdat()">&#9654;</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Tradisi</h2>
+                <img id="tradisi-img" src="/asset/img-jawabarat/wayanggolek.jpg" alt="Tradisi Jawa Barat">
+                <h3 id="tradisi-title">1. Wayang Golek</h3>
+                <p id="tradisi-desc">Salah satu bentuk seni tradisional yang terkenal di Jawa Barat adalah wayang golek, 
+                    yaitu pertunjukan boneka kayu yang mengisahkan cerita-cerita epik seperti Ramayana dan Mahabharata</p>
+                <div class="button-container">
+                    <button onclick="prevTradisi()">&#9664;</button>
+                    <button onclick="nextTradisi()">&#9654;</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Seni</h2>
+                <img id="seni-img" src="/asset/img-jawabarat/senipertunjukan.jpg" alt="Seni Jawa Barat">
+                <h3 id="seni-title">1. Seni Pertunjukan</h3>
+                <p id="seni-desc"> Jawa Barat memiliki beragam tradisi seni pertunjukan, seperti wayang golek, tari tradisional (seperti tari Jaipongan, 
+                    tari Sunda, dan tari Topeng), serta teater tradisional seperti ketoprak dan lenong.</p>
+                <div class="button-container">
+                    <button onclick="prevSeni()">&#9664;</button>
+                    <button onclick="nextSeni()">&#9654;</button>
+                </div>
+            </div>            
+            <div class="card">
+                <h2>Bahasa</h2>
+                <h3 id="bahasa-title">1. Bahasa Sunda</h3>
+                <p id="bahasa-desc">Bahasa ini merupakan bahasa utama yang digunakan oleh suku Sunda di Jawa Barat. 
+                    Bahasa Sunda memiliki dialek yang berbeda-beda tergantung dari daerahnya, misalnya dialek Banten, Bogor, Bandung, dan sebagainya.</p>
+                <div class="button-container">
+                    <button onclick="prevBahasa()">&#9664;</button>
+                    <button onclick="nextBahasa()">&#9654;</button>
+                </div>
+            </div>            
+            <div class="card">
+                <h2>Nilai-Nilai Budaya</h2>
+                <h3 id="nilai-budaya-title">1. Gotong Royong</h3>
+                <p id="nilai-budaya-desc">Gotong royong adalah konsep kerjasama dalam masyarakat di mana setiap individu secara sukarela membantu satu sama lain untuk mencapai tujuan bersama dan memperkuat ikatan sosial.</p>
+                <div class="button-container">
+                    <button onclick="prevNilaiBudaya()">&#9664;</button>
+                    <button onclick="nextNilaiBudaya()">&#9654;</button>
+                </div>
+            </div>
+        </section>
+        <div class="center-text">
+            <h3>Video tentang Kebudayaan Jawa Barat</h3>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pUjsFSfyww0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>                
+    </main>
+    <footer>
+        <p>&copy; 2024 JelajahiJawa.id. All Rights Reserved.</p>
+    </footer>
+    <script src="../scripts/jawabarat.js"></script>
+</body>
+</html>
