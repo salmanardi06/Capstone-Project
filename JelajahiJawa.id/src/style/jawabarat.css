@@ -12,9 +12,10 @@ header {
     background-color: #241111;
     color: white;
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -22,6 +23,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: sticky;
 }
 
 .logo {
