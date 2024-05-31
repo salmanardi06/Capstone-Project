@@ -108,7 +108,7 @@ class Navbar extends HTMLElement {
           <ul class="nav-links">
               <li><a href="/" >Beranda</a></li>
               <li><a href="../../../eksplorasi.html" class="active">Eksplorasi</a></li>
-              <li><a href="#">Tentang</a></li>
+              <li><a href="../../../tentang.html">Tentang</a></li>
           </ul>            
       </nav>
     </header>    
