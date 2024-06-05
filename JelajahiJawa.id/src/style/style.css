@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('/img/Background.jpg');
+    background-image: url('/asset/img/Background.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -90,6 +90,7 @@ main {
     opacity: 0;
     animation: fadeIn 5s forwards;
     border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
 }
 
@@ -100,6 +101,9 @@ footer {
     text-align: center;
     padding: 3px 20px;
 }
+
+
+
 
 /* Media query for small screens */
 @media (max-width: 768px) {
