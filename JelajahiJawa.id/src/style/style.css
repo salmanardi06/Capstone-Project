@@ -5,15 +5,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('/asset/img/Background.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 header {
     background-color: #241111;
     color: white;
     padding: 10px 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -56,7 +57,7 @@ nav {
 }
 /* Style for toggle button */
 .toggle-button {
-    display: none; /* Hide the toggle button by default */
+    display: none; 
     background-color: transparent;
     border: none;
     color: white;
@@ -67,11 +68,77 @@ nav {
 /* Style for main content */
 main {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
     text-align: center;
+    color: black;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
     color: white;
+}
+
+.welcome-text {
+    font-size: 2em; 
+    padding: 5px 10px; 
+}
+
+@media (max-width: 480px) {
+.welcome-text {
+    font-size: 1.5em; 
+    padding: 5px 5px; 
+}
+}
+
+/* Style for section title */
+.section-title {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Style for info boxes */
+.info-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box {
+    width: 45%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #241111;
+    border: 7px solid chocolate;
+    color: white;
+    border-radius: 8px;
+}
+
+.info-box.right {
+    align-self: flex-end;
+}
+
+.info-box.left {
+    align-self: flex-start;
 }
 
 /* Keyframes for fadeIn animation */
@@ -84,16 +151,6 @@ main {
     }
 }
 
-/* Style for welcome text */
-.welcome-text {
-    font-size: 2.5em;
-    opacity: 0;
-    animation: fadeIn 5s forwards;
-    border: 5px solid white;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-}
-
 /* Style for footer */
 footer {
     background-color: #241111;
@@ -102,9 +159,6 @@ footer {
     padding: 3px 20px;
 }
 
-
-
-
 /* Media query for small screens */
 @media (max-width: 768px) {
     .nav-links {
@@ -112,14 +166,15 @@ footer {
         background-color: #241111;
         padding: 10px;
         position: absolute;
-        top: 60px; /* Adjust according to header height */
+        top: 60px; 
         left: 0;
         right: 0;
-        display: none; /* Hide navigation links by default on small screens */
+        display: none; 
+        z-index: 100;
     }
 
     .nav-links.open {
-        display: flex; /* Show navigation links when toggle button is clicked */
+        display: flex; 
     }
 
     .nav-links li {
@@ -138,6 +193,6 @@ footer {
     }
 
     .toggle-button {
-        display: block; /* Show the toggle button on small screens */
+        display: block; 
     }
 }
