@@ -55,6 +55,7 @@ nav {
 .nav-links a.active {
     background-color: chocolate;
 }
+
 /* Style for toggle button */
 .toggle-button {
     display: none; 
@@ -97,16 +98,18 @@ main {
     color: white;
 }
 
-.welcome-text {
-    font-size: 2em; 
-    padding: 5px 10px; 
+@media (max-width: 768px) {
+    .welcome-text {
+        font-size: 2em; 
+        padding: 5px 10px; 
+    }
 }
 
 @media (max-width: 480px) {
-.welcome-text {
-    font-size: 1.5em; 
-    padding: 5px 5px; 
-}
+    .welcome-text {
+        font-size: 1.5em; 
+        padding: 5px 5px; 
+    }
 }
 
 /* Style for section title */
@@ -139,6 +142,28 @@ main {
 
 .info-box.left {
     align-self: flex-start;
+}
+
+/* Responsive styles for info boxes */
+@media (max-width: 1024px) {
+    .info-box {
+        width: 60%; /* Adjust the width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .info-box {
+        width: 80%; /* Adjust the width for small tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        width: 90%; /* Adjust the width for mobile phones */
+    }
+    .info-box.right, .info-box.left {
+        align-self: center; /* Center align the info boxes on small screens */
+    }
 }
 
 /* Keyframes for fadeIn animation */
