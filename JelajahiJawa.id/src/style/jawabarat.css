@@ -1,3 +1,4 @@
+/* Style for body, header, nav, and logo */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,9 +13,10 @@ header {
     background-color: #241111;
     color: white;
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -22,6 +24,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: sticky;
 }
 
 .logo {
@@ -93,7 +96,7 @@ main {
     color: white;
 }
 
-.card img{
+.card img {
     max-width: 100%;
     border-radius: 8px;
 }
@@ -133,8 +136,8 @@ footer {
         padding: 10px;
         position: absolute;
         top: 60px; /* Adjust according to header height */
-        left: 0;
-        right: 0;
+        left: -20px;
+        right: -20px;
         display: none; /* Hide navigation links by default on small screens */
         z-index: 1; /* Ensure the dropdown menu is above other content */
     }
@@ -160,6 +163,10 @@ footer {
 
     .toggle-button {
         display: block; /* Show the toggle button on small screens */
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
+        text-align: center; /* Center the content */
+        padding: 10px; /* Adjust the padding as needed */
     }
 }
 
