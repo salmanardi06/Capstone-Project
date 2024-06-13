@@ -256,6 +256,29 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('nilai-budaya-desc').innerText = nilaiBudayaData[nilaiBudayaIndex].desc;
     }
 
+    document.addEventListener('DOMContentLoaded', () => {
+        const animatedTexts = document.querySelectorAll('.animated-text');
+    
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+    
+        const textObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('textFadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+    
+        animatedTexts.forEach(text => {
+            textObserver.observe(text);
+        });
+    });
+
     window.nextAdat = nextAdat;
     window.prevAdat = prevAdat;
     window.nextTradisi = nextTradisi;
