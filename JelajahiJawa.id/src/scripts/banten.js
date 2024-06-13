@@ -4,7 +4,7 @@ let adatIndex = 0, tradisiIndex = 0, seniIndex = 0, bahasaIndex = 0, nilaiBudaya
 const adatData = [
     {
         title: "1. Adat Ngawalu",
-        desc: "Ngawalu bertujuan untuk mensyukuri hasil panen yang telah didapat. Jika mengikuti sejarahnya, sebetulnya upacara ini dikhususkan untuk Dewi Padi, sesuai dengan kepercayaan Sunda Kuno",
+        desc: "Ngawalu bertujuan untuk mensyukuri hasil panen yang telah didapat. Jika mengikuti sejarahnya, sebetulnya upacara ini dikhususkan untuk Dewi Padi, sesuai dengan kepercayaan Sunda Kuno.",
         img: "../../asset/img-banten/ngawalu.jfif",
     },
     {
