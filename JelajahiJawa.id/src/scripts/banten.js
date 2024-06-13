@@ -4,7 +4,7 @@ let adatIndex = 0, tradisiIndex = 0, seniIndex = 0, bahasaIndex = 0, nilaiBudaya
 const adatData = [
     {
         title: "1. Adat Ngawalu",
-        desc: "Ngawalu bertujuan untuk mensyukuri hasil panen yang telah didapat. Jika mengikuti sejarahnya, sebetulnya upacara ini dikhususkan untuk Dewi Padi, sesuai dengan kepercayaan Sunda Kuno.",
+        desc: "Ngawalu bertujuan untuk mensyukuri hasil panen yang telah didapat. Jika mengikuti sejarahnya, sebetulnya upacara ini dikhususkan untuk Dewi Padi, sesuai dengan kepercayaan Sunda Kuno",
         img: "../../asset/img-banten/ngawalu.jfif",
     },
     {
@@ -208,6 +208,29 @@ function updateNilaiBudaya() {
     document.getElementById('nilai-budaya-title').innerText = nilaiBudayaData[nilaiBudayaIndex].title;
     document.getElementById('nilai-budaya-desc').innerText = nilaiBudayaData[nilaiBudayaIndex].desc;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedTexts = document.querySelectorAll('.animated-text');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const textObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('textFadeIn');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    animatedTexts.forEach(text => {
+        textObserver.observe(text);
+    });
+});
 
 window.nextAdat = nextAdat;
 window.prevAdat = prevAdat;
