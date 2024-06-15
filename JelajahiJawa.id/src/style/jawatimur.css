@@ -94,7 +94,6 @@ main {
     color: white;
 }
 
-.card img{
     max-width: 100%;
     border-radius: 8px;
 }
@@ -134,10 +133,6 @@ footer {
         padding: 10px;
         position: absolute;
         top: 60px; /* Adjust according to header height */
-        left: 0;
-        right: 0;
-        display: none; /* Hide navigation links by default on small screens */
-        z-index: 1; /* Ensure the dropdown menu is above other content */
     }
 
     .nav-links.open {

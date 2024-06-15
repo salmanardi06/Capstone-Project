@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebudayaan DIY</title>
+    <link rel="stylesheet" href="../style/diy.css">
+    <link rel="icon" href="../../asset/img/icontab.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JelajahiJawa.id</div>
+            <button class="toggle-button">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="/" >Beranda</a></li>
+                <li><a href="../../../eksplorasi.html" class="active">Eksplorasi</a></li>
+                <li><a href="../../../tentang.html">Tentang</a></li>
+                <li><a href="../../../kontak.html">Kontak Kami</a></li>
+            </ul>            
+        </nav>
+      </header>  
+    <main>
+        <section class="intro">
+            <h1 class="animated-text">Selamat Datang di Kebudayaan DI Yogyakarta</h1>
+            <p class="animated-text">Provinsi Daerah Istimewa Yogyakarta (DIY) memiliki kebudayaan yang kaya dan beragam, mencerminkan sejarah panjang serta keberagaman etnisnya. Salah satu kesenian tradisional yang 
+                terkenal adalah Wayang Kulit, yang melibatkan pertunjukan bayangan boneka kulit yang diproyeksikan pada layar, sering diiringi dengan musik gamelan dan narasi oleh dalang. Seni tari Bedhaya juga merupakan 
+                bagian penting dari budaya Yogyakarta, ditampilkan dalam acara-acara adat dengan gerakan lembut dan anggun yang mengisahkan legenda atau mitos lokal. Selain itu, Pencak Silat, seni bela diri tradisional,
+                 menjadi bagian integral dari upacara adat dan kehidupan sehari-hari masyarakat. Instrumen musik tradisional seperti Gamelan, yang terdiri dari berbagai instrumen perunggu dan kayu, sering dimainkan dalam 
+                 kelompok untuk menghasilkan melodi khas pada berbagai acara budaya. Upacara adat Sekaten, sebuah perayaan maulid Nabi Muhammad yang dilakukan oleh masyarakat, melibatkan berbagai ritual, tarian, dan doa 
+                 untuk kesejahteraan. Arsitektur Keraton Yogyakarta juga menunjukkan kekhasan budaya lokal, dengan bangunan yang dihiasi ornamen tradisional dan simbol-simbol kerajaan. Selain itu, tradisi lisan Macapat, 
+                 yang terdiri dari sajak-sajak berirama, sering digunakan dalam berbagai acara sebagai bentuk komunikasi dan hiburan yang sarat makna dan pesan moral. Semua elemen ini mencerminkan kekayaan dan keanekaragaman 
+                 tradisi lokal yang terus dijaga dan dilestarikan oleh masyarakat Yogyakarta.</p>
+        </section>
+        <section class="content">
+            <div class="card">
+                <h2>Adat Istiadat</h2>
+                <img id="adat-img" src="../../asset/img-diy/separan-bakakak.jpg" alt="Adat Istiadat DIY">
+                <h3 id="adat-title">1. Separan Bekakak</h3>
+                <p id="adat-desc">Bekakak artinya korban penyembelihan hewan atau manusia. Dalam upacara adat ini, bekakak hanya berupa tiruan manusia saja yang aslinya merupakan boneka pengantin dengan posisi duduk 
+                    bersila dan terbuat dari tepung ketan. Sesuai namanya, upacara Saparan Bekakak dilakukan pada saat bulan Safar.</p>
+                <div class="button-container">
+                    <button onclick="prevAdat()">&#9664;</button>
+                    <button onclick="nextAdat()">&#9654;</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Tradisi</h2>
+                <img id="tradisi-img" src="../../asset/img-diy/tedhak-siten.jpg" alt="Tradisi DIY">
+                <h3 id="tradisi-title">1. Tedhak siten</h3>
+                <p id="tradisi-desc">Tradisi ini adalah upacara turun tanah bagi anak yang berusia tujuh atau delapan bulan. Tedhak Siten bertujuan untuk memperkenalkan
+                     anak kepada bumi dan memohon keselamatan serta kemudahan rejeki untuk sang anak.</p>
+                <div class="button-container">
+                    <button onclick="prevTradisi()">&#9664;</button>
+                    <button onclick="nextTradisi()">&#9654;</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Seni</h2>
+                <img id="seni-img" src="../../asset/img-diy/wayang.jpg" alt="Seni DIY">
+                <h3 id="seni-title">1. Wayang Kulit</h3>
+                <p id="seni-desc"> Wayang Kulit adalah seni pertunjukan boneka bayangan yang dimainkan oleh seorang dalang di belakang layar yang 
+                    diterangi lampu. Boneka-boneka kulit diproyeksikan ke layar, dan cerita-cerita dari epik Ramayana dan Mahabharata sering
+                     menjadi tema utama.</p>
+                <div class="button-container">
+                    <button onclick="prevSeni()">&#9664;</button>
+                    <button onclick="nextSeni()">&#9654;</button>
+                </div>
+            </div>            
+            <div class="card">
+                <h2>Bahasa</h2>
+                <h3 id="bahasa-title">1. Bahasa Jawa</h3>
+                <p id="bahasa-desc">Bahasa Jawa adalah bahasa sehari-hari yang paling umum digunakan oleh penduduk Yogyakarta. Bahasa ini memiliki
+                     tingkatan atau strata yang berbeda tergantung pada konteks dan hubungan sosial antara pembicara dan pendengar.</p>
+                <div class="button-container">
+                    <button onclick="prevBahasa()">&#9664;</button>
+                    <button onclick="nextBahasa()">&#9654;</button>
+                </div>
+            </div>            
+            <div class="card">
+                <h2>Nilai-Nilai Budaya</h2>
+                <h3 id="nilai-budaya-title">1. Keraton dan Kerajaan</h3>
+                <p id="nilai-budaya-desc">Keraton Yogyakarta merupakan pusat budaya dan kekuasaan yang memegang peranan penting dalam menjaga tradisi
+                     dan nilai-nilai budaya. Keraton menjadi simbol kebesaran dan keagungan budaya Jawa.</p>
+                <div class="button-container">
+                    <button onclick="prevNilaiBudaya()">&#9664;</button>
+                    <button onclick="nextNilaiBudaya()">&#9654;</button>
+                </div>
+            </div>
+        </section>
+        <div class="center-text">
+            <h3>Video tentang Kebudayaan DI Yogyakarta</h3>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NUq-bF-zld4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>                
+    </main>
+    <footer>
+        <p>&copy; 2024 JelajahiJawa.id. All Rights Reserved.</p>
+    </footer>
+    <script src="../scripts/diyogyakarta.js"></script>
+</body>
+</html>

@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Hero image styles */
 .hero-image img {
     width: 100%;
     margin: auto;
@@ -32,14 +31,14 @@ article>.judul {
     margin-left: 60px;
     margin-right: 50px;
 }
+
 .content>article>.card-content>.card{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
     transform: scale(1);
     background: #241111;
     color: #fff;
-
-}
+  
 .content>article>.card-content>.card:hover{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);    
     transform: scale(1.02);
@@ -97,7 +96,6 @@ article>.judul {
 .grid>.grid-item>img{
     max-width: 100%;
 
-}
 .grid>.grid-item>img {
     width: 100%;
 }
@@ -142,11 +140,6 @@ article>.judul {
 
 .video-container>h2 {
     margin: 20px 0 10px 0;
-}
-
-.video-container>iframe {
-    margin: auto;
-    width: 80%;
 }
 
 /* Media queries for responsive design */

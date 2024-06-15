@@ -255,7 +255,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('nilai-budaya-title').innerText = nilaiBudayaData[nilaiBudayaIndex].title;
         document.getElementById('nilai-budaya-desc').innerText = nilaiBudayaData[nilaiBudayaIndex].desc;
     }
-
     window.nextAdat = nextAdat;
     window.prevAdat = prevAdat;
     window.nextTradisi = nextTradisi;

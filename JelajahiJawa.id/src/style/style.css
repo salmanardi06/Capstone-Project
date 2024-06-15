@@ -75,6 +75,9 @@ footer {
     padding: 3px 20px;
 }
 
+
+
+
 /* Media query for small screens */
 @media (max-width: 768px) {
     .nav-links {

@@ -187,5 +187,4 @@ document.addEventListener('DOMContentLoaded', function() {
     window.prevBahasa = prevBahasa;
     window.nextNilaiBudaya = nextNilaiBudaya;
     window.prevNilaiBudaya = prevNilaiBudaya;
-    
-    });
+

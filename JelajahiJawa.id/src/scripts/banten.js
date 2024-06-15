@@ -219,5 +219,4 @@ window.nextBahasa = nextBahasa;
 window.prevBahasa = prevBahasa;
 window.nextNilaiBudaya = nextNilaiBudaya;
 window.prevNilaiBudaya = prevNilaiBudaya;
-
-});
+  
