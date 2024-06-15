@@ -5,10 +5,27 @@
     box-sizing: border-box;
 }
 
+/* Animasi gambar hero */
+@keyframes heroImageAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
 .hero-image img {
     width: 100%;
     margin: auto;
     min-height: fit-content;
+    animation: heroImageAnimation 10s infinite alternate;
 }
 
 /* Main content styles */
@@ -38,7 +55,8 @@ article>.judul {
     transform: scale(1);
     background: #241111;
     color: #fff;
-  
+}
+
 .content>article>.card-content>.card:hover{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);    
     transform: scale(1.02);
@@ -95,6 +113,7 @@ article>.judul {
 
 .grid>.grid-item>img{
     max-width: 100%;
+}
 
 .grid>.grid-item>img {
     width: 100%;
@@ -142,6 +161,23 @@ article>.judul {
     margin: 20px 0 10px 0;
 }
 
+.video-container>.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Media queries for responsive design */
 
 /* Mobile styles */
@@ -183,4 +219,92 @@ article>.judul {
     .content>article>.card-content {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+/* Animasi teks */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    animation: textFadeIn 2s ease-out;
+}
+
+/* Animasi card */
+@keyframes cardFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grid>.grid-item {
+    position: relative;
+    background-color: #241111;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 300px;
+    border-radius: 8px;
+    animation: cardFadeIn 1s ease-out;
+}
+
+/* Hover effect for cards */
+.grid>.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasi video container */
+@keyframes videoFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.video-container {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    animation: videoFadeIn 1.5s ease-out;
+}
+
+.video-container>h2 {
+    margin: 20px 0 10px 0;
+}
+
+.video-container>.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
