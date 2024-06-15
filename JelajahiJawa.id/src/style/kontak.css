@@ -1,0 +1,198 @@
+/* Style for body, header, nav, and logo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #241111;
+    color: white;
+    padding: 10px 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+/* Style for navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background-color: chocolate;
+    border-radius: 5px;
+}
+
+.nav-links a.active {
+    background-color: chocolate;
+}
+
+/* Style for toggle button */
+.toggle-button {
+    display: none; 
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style for main content */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Style for contact form section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-card {
+    background-color: #241111;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.form-card label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-card input,
+.form-card textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-card button {
+    background-color: chocolate;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-card button:hover {
+    background-color: #fc9700;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: #241111;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: none;
+        z-index: 100;
+        margin-top: -7px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 0;
+        display: block;
+    }
+
+    .nav-links a.active {
+        background-color: chocolate;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 0 10px;
+    }
+}
+
+/* Style for footer */
+footer {
+    background-color: #241111;
+    color: white;
+    text-align: center;
+    padding: 3px 20px;
+}
