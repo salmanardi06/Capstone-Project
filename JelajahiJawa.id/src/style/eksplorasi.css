@@ -1,0 +1,193 @@
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Hero image styles */
+.hero-image img {
+    width: 100%;
+    margin: auto;
+    min-height: fit-content;
+}
+
+/* Main content styles */
+main {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+article>.judul {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.content>article>.card-content {
+    gap: 20px;
+    display: grid;
+    margin: 20px 0;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 60px;
+    margin-right: 50px;
+}
+.content>article>.card-content>.card{
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+    background: #241111;
+    color: #fff;
+
+}
+.content>article>.card-content>.card:hover{
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);    
+    transform: scale(1.02);
+}
+
+/* style utk page detail banten dan dki jakarta */
+.content{
+    min-height: 100vh;
+}
+
+.content>.judul-content {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content>.judul-content>h1 {
+    font-size: 2rem;
+}
+
+.content>.judul-content p {
+    margin: 20px auto;
+    width: 80%;
+    font-size: 18px;
+}
+
+.grid {
+    gap: 25px;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+
+.grid>.grid-item {
+    position: relative;
+    background-color: #241111;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.grid>.grid-item>h2,
+.grid>.grid-item>h3 {
+    padding: 10px;
+}
+
+.grid>.grid-item>img{
+    max-width: 100%;
+
+}
+.grid>.grid-item>img {
+    width: 100%;
+}
+
+.grid>.grid-item>p {
+    word-spacing: 5px;
+    font-size: 16px;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: chocolate;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-container button:hover {
+    background-color: #fc9700;
+}
+
+/* Video container styles */
+.video-container {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+}
+
+.video-container>h2 {
+    margin: 20px 0 10px 0;
+}
+
+.video-container>iframe {
+    margin: auto;
+    width: 80%;
+}
+
+/* Media queries for responsive design */
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+    .content>article {
+        margin: auto;
+        width: 100%;
+    }
+
+    .content>article>.card-content {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .hero-image>img {
+        width: 100%;
+    }
+
+    .card {
+        margin: auto;
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content>.judul-content>h1 {
+        font-size: 1.8rem;
+        padding: 20px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content>article>.card-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}

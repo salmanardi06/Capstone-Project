@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - JelajahiJawa.id</title>
+    <link rel="stylesheet" href="./src/style/kontak.css">
+    <link rel="icon" href="./asset/img/icontab.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JelajahiJawa.id</div>
+            <button class="toggle-button">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="eksplorasi.html">Eksplorasi</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="#"class="active">Kontak Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main><br><br>
+        <section class="contact-form">
+            <div class="form-card">
+                <h2>Kontak Kami</h2>
+                <p>Jika Anda mempunyai saran untuk website kami, Anda bisa mengisi form di bawah ini:</p>
+                <form id="contact-form">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="suggestion">Saran:</label>
+                    <textarea id="suggestion" name="suggestion" required></textarea>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 JelajahiJawa.id. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="./src/scripts/kontak.js"></script>
+</body>
+</html>
