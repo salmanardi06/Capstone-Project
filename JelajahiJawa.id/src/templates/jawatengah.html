@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebudayaan Jawa Tengaht</title>
+    <link rel="stylesheet" href="../style/jawatengah.css">
+    <link rel="icon" href="../../asset/img/icontab.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JelajahiJawa.id</div>
+            <button class="toggle-button">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="/" >Beranda</a></li>
+                <li><a href="../../../eksplorasi.html" class="active">Eksplorasi</a></li>
+                <li><a href="../../../tentang.html">Tentang</a></li>
+            </ul>            
+        </nav>
+      </header>  
+    <main>
+        <section class="intro">
+            <h1 class="animated-text">Selamat Datang di Kebudayaan Jawa Tengah</h1>
+            <p class="animated-text">Provinsi Jawa Tengah memiliki kebudayaan yang kaya dan beragam, mencerminkan sejarah panjang serta keberagaman etnisnya. 
+                Salah satu kesenian tradisional yang terkenal adalah Wayang Kulit, yang melibatkan pertunjukan bayangan boneka kulit yang diproyeksikan pada layar,
+                 sering diiringi dengan musik gamelan dan narasi oleh dalang. Seni tari Gambyong juga merupakan bagian penting dari budaya Jawa Tengah, ditampilkan dalam 
+                 acara-acara adat dengan gerakan lemah gemulai yang mengisahkan keindahan dan kesederhanaan hidup. Selain itu, Pencak Silat, seni bela diri tradisional,
+                  menjadi bagian integral dari upacara adat dan kehidupan sehari-hari masyarakat. Instrumen musik tradisional seperti Gamelan, yang terdiri dari
+                   berbagai instrumen perunggu dan kayu, sering dimainkan dalam kelompok untuk menghasilkan melodi khas pada berbagai acara budaya. Upacara adat Dugderan,
+                    sebuah perayaan menyambut datangnya bulan Ramadan yang dilakukan oleh masyarakat Semarang, melibatkan berbagai ritual, tarian, dan doa untuk kesejahteraan. 
+                    Arsitektur Keraton Kasunanan Surakarta dan Pura Mangkunegaran juga menunjukkan kekhasan budaya lokal, dengan bangunan yang dihiasi ornamen tradisional
+                     dan simbol-simbol kerajaan. Selain itu, tradisi lisan Macapat, yang terdiri dari sajak-sajak berirama, sering digunakan dalam berbagai acara sebagai bentuk 
+                     komunikasi dan hiburan yang sarat makna dan pesan moral. Semua elemen ini mencerminkan kekayaan dan keanekaragaman tradisi lokal yang terus dijaga dan 
+                     dilestarikan oleh masyarakat Jawa Tengah.</p>
+        </section>
+        <section class="content">
+            <div class="card">
+                <h2>Adat Istiadat</h2>
+                <img id="adat-img" src="../../asset/img-jawatengah/ruwatan.jpg" alt="Adat Istiadat Jawa Tengah">
+                <h3 id="adat-title">1. Upacara Ruwatan</h3>
+                <p id="adat-desc">Upacara Ruwatan, bahasa Jawa dari “dibebaskan” atau “dilepaskan”. Masyarakat percaya bahwa Upacara Ruwatan ini dapat melepaskan seseorang dari 
+                    hukuman, atau bahkan kutukan, yang akan merugikan dirinya dan mendekatkannya pada bahaya.</p>
+                <div class="button-container">
+                    <button onclick="prevAdat()">&#9664;</button>
+                    <button onclick="nextAdat()">&#9654;</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Tradisi</h2>
+                <img id="tradisi-img" src="../../asset/img-jawatengah/wong.jpg" alt="Tradisi Jawa Tengah">
+                <h3 id="tradisi-title">1. Wayang Wong</h3>
+                <p id="tradisi-desc">Wayang Wong adalah pertunjukan drama tari yang menggunakan tokoh-tokoh wayang sebagai cerita utamanya. Pertunjukan ini tidak hanya 
+                    menghibur, tetapi juga mengajarkan nilai-nilai moral dan sejarah kepada penontonnya.</p>
+                <div class="button-container">
+                    <button onclick="prevTradisi()">&#9664;</button>
+                    <button onclick="nextTradisi()">&#9654;</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Seni</h2>
+                <img id="seni-img" src="../../asset/img-jawatengah/tari.jpeg" alt="Seni Jawa Tengah">
+                <h3 id="seni-title">1. Seni Tari Tradisional</h3>
+                <p id="seni-desc">  Tarian sakral yang biasanya dipentaskan di keraton, melibatkan sembilan penari perempuan dengan gerakan-gerakan yang anggun dan lembut. 
+                    Tari Bedhaya menggambarkan keagungan dan keanggunan serta dianggap sebagai bentuk penghormatan terhadap dewata dan leluhur.</p>
+                <div class="button-container">
+                    <button onclick="prevSeni()">&#9664;</button>
+                    <button onclick="nextSeni()">&#9654;</button>
+                </div>
+            </div>            
+            <div class="card">
+                <h2>Bahasa</h2>
+                <h3 id="bahasa-title">1. Bahasa Jawa</h3>
+                <p id="bahasa-desc">Bahasa Jawa merupakan bahasa utama yang digunakan oleh mayoritas penduduk Jawa Tengah dalam kehidupan sehari-hari. Bahasa Jawa memiliki variasi 
+                    dialek yang cukup beragam tergantung dari daerahnya, seperti dialek Jawa Tengah bagian utara (termasuk Semarang), Jawa Tengah bagian selatan (termasuk Solo),
+                     Pekalongan, Pati, dan lain-lain.</p>
+                <div class="button-container">
+                    <button onclick="prevBahasa()">&#9664;</button>
+                    <button onclick="nextBahasa()">&#9654;</button>
+                </div>
+            </div>            
+            <div class="card">
+                <h2>Nilai-Nilai Budaya</h2>
+                <h3 id="nilai-budaya-title">1.Keagamaan dan Kepercayaan</h3>
+                <p id="nilai-budaya-desc">Nilai-nilai keagamaan, baik dalam bentuk kepercayaan tradisional maupun agama-agama yang dianut seperti Islam, Kristen, dan Hindu, sangat mempengaruhi kehidupan sehari-hari masyarakat Jawa Tengah. Ritual-ritual keagamaan, seperti slametan, upacara adat, dan perayaan-perayaan keagamaan dihargai sebagai sarana untuk memperkuat hubungan dengan Tuhan dan memperkokoh ikatan sosial antarwarga.</p>
+                <div class="button-container">
+                    <button onclick="prevNilaiBudaya()">&#9664;</button>
+                    <button onclick="nextNilaiBudaya()">&#9654;</button>
+                </div>
+            </div>
+        </section>
+        <div class="center-text">
+            <h3>Video tentang Kebudayaan Jawa Tengah</h3>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mzjjFKli9Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>                
+    </main>
+    <footer>
+        <p>&copy; 2024 JelajahiJawa.id. All Rights Reserved.</p>
+    </footer>
+    <script src="../scripts/jawatengah.js"></script>
+</body>
+</html>
