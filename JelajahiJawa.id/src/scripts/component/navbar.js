@@ -110,7 +110,7 @@ class Navbar extends HTMLElement {
               <li><a href="/" >Beranda</a></li>
               <li><a href="../../../eksplorasi.html" class="active">Eksplorasi</a></li>
               <li><a href="../../../tentang.html">Tentang</a></li>
-              <li><a href="#">Kontak Kami</a></li>
+              <li><a href="../../../kontak.html">Kontak Kami</a></li>
           </ul>            
       </nav>
     </header>    
