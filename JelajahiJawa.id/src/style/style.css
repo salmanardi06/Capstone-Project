@@ -11,6 +11,10 @@ header {
     background-color: #241111;
     color: white;
     padding: 10px 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -51,6 +55,10 @@ nav {
 .nav-links a.active {
     background-color: chocolate;
 }
+
+/* Style for toggle button */
+.toggle-button {
+    display: none; 
     background-color: transparent;
     border: none;
     color: white;
@@ -61,10 +69,119 @@ nav {
 /* Style for main content */
 main {
     flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2.5em;
     opacity: 0;
     animation: fadeIn 5s forwards;
     border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .welcome-text {
+        font-size: 2em; 
+        padding: 5px 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-text {
+        font-size: 1.5em; 
+        padding: 5px 5px; 
+    }
+}
+
+/* Style for section title */
+.section-title {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Style for info boxes */
+.info-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box {
+    width: 45%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #241111;
+    border: 7px solid chocolate;
+    color: white;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.info-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info-box.right {
+    align-self: flex-end;
+}
+
+.info-box.left {
+    align-self: flex-start;
+}
+
+/* Responsive styles for info boxes */
+@media (max-width: 1024px) {
+    .info-box {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        width: 90%;
+    }
+    .info-box.right, .info-box.left {
+        align-self: center;
+    }
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Style for footer */
@@ -75,9 +192,6 @@ footer {
     padding: 3px 20px;
 }
 
-
-
-
 /* Media query for small screens */
 @media (max-width: 768px) {
     .nav-links {
@@ -85,6 +199,16 @@ footer {
         background-color: #241111;
         padding: 10px;
         position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: none;
+        z-index: 100;
+        margin-top: -7px;
+    }
+
+    .nav-links.open {
+        display: flex;
     }
 
     .nav-links li {
@@ -103,5 +227,6 @@ footer {
     }
 
     .toggle-button {
+        display: block;
     }
 }
