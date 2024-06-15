@@ -5,10 +5,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('/asset/img/Background.jpg');
-    /* background-image: url('../../img/Background.jpg'); */
-    background-size: cover;
-    background-position: center;
 }
 
 header {
@@ -55,9 +51,6 @@ nav {
 .nav-links a.active {
     background-color: chocolate;
 }
-/* Style for toggle button */
-.toggle-button {
-    display: none; /* Hide the toggle button by default */
     background-color: transparent;
     border: none;
     color: white;
@@ -68,30 +61,10 @@ nav {
 /* Style for main content */
 main {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-/* Keyframes for fadeIn animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Style for welcome text */
-.welcome-text {
     font-size: 2.5em;
     opacity: 0;
     animation: fadeIn 5s forwards;
     border: 5px solid white;
-    padding: 10px 20px;
 }
 
 /* Style for footer */
@@ -102,9 +75,6 @@ footer {
     padding: 3px 20px;
 }
 
-
-
-
 /* Media query for small screens */
 @media (max-width: 768px) {
     .nav-links {
@@ -112,14 +82,6 @@ footer {
         background-color: #241111;
         padding: 10px;
         position: absolute;
-        top: 60px; /* Adjust according to header height */
-        left: 0;
-        right: 0;
-        display: none; /* Hide navigation links by default on small screens */
-    }
-
-    .nav-links.open {
-        display: flex; /* Show navigation links when toggle button is clicked */
     }
 
     .nav-links li {
@@ -138,6 +100,5 @@ footer {
     }
 
     .toggle-button {
-        display: block; /* Show the toggle button on small screens */
     }
 }
