@@ -75,6 +75,7 @@ class Navbar extends HTMLElement {
                 right: 0;
                 display: none; 
                 z-index: 999;
+                margin-top: -7px;
             }
         
             .nav-links.open {
@@ -109,6 +110,7 @@ class Navbar extends HTMLElement {
               <li><a href="/" >Beranda</a></li>
               <li><a href="../../../eksplorasi.html" class="active">Eksplorasi</a></li>
               <li><a href="../../../tentang.html">Tentang</a></li>
+              <li><a href="../../../kontak.html">Kontak Kami</a></li>
           </ul>            
       </nav>
     </header>    
@@ -122,4 +124,5 @@ class Navbar extends HTMLElement {
 
     }
 }
-
+   
+customElements.define('navbar-eksplorasi', Navbar);
