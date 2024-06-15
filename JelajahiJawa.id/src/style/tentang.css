@@ -48,6 +48,7 @@ nav {
 .nav-links a.active {
     background-color: chocolate;
 }
+
 /* Style for toggle button */
 .toggle-button {
     display: none; /* Hide the toggle button by default */
@@ -68,7 +69,7 @@ footer {
 
 .home {
     display: flex;
-    height: 100dvh;
+    height: 100vh;
     background: linear-gradient(to top, #D2E2FB 30%, #86A8DB);
     position: relative;
     overflow: hidden;
@@ -89,6 +90,19 @@ footer {
     color: white;
     font-size: 80px;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    animation: fadeInTitle 1s ease-in-out;
+    white-space: nowrap; /* Prevents the text from breaking into multiple lines */
+}
+
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .about {
@@ -98,8 +112,26 @@ footer {
     position: relative;
     z-index: 100;
 }
+
 .about h1 {
     font-size: 40px;
+    animation: fadeInText 1s ease-in-out;
+}
+
+.about p {
+    animation: fadeInText 1.5s ease-in-out;
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Media query for small screens */
@@ -138,5 +170,30 @@ footer {
 
     .toggle-button {
         display: block; /* Show the toggle button on small screens */
+    }
+
+    .home .title {
+        font-size: 50px; /* Adjust font size for smaller screens */
+        white-space: nowrap; /* Prevents the text from breaking into multiple lines */
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about h1 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .home .title {
+        font-size: 40px; /* Further adjust font size for very small screens */
+        white-space: nowrap; /* Prevents the text from breaking into multiple lines */
+    }
+
+    .about h1 {
+        font-size: 25px; /* Further adjust font size for very small screens */
     }
 }
