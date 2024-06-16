@@ -24,3 +24,4 @@ Situs web JelajahiJawa.id adalah platform online yang berfokus pada penyediaan i
 - Untuk mengakses situs JelajahiJawa.id, pengguna dapat membuka browser web dan memasukkan URL [kunjungi](https://jelajahijawa.000webhostapp.com/index.html) Pastikan koneksi internet stabil untuk pengalaman browsing yang optimal.
 - Gunakan menu navigasi di bagian atas halaman untuk berpindah antara bagian utama seperti eksplorasi, kontak dan tentang.
 - Gunakan tombol lihat detail untuk melihat lebih lanjut informasi tentang kebudayaan sebuah provinsi.
+- Karena kami tidak menggunakan teknik lazy loading pada website yang kami buat, kami sarankan sebaiknya untuk clone proyek pada branch main, atau anda bisa mendownload proyeknya [disini](https://drive.google.com/drive/folders/12XazsDKlTM8onKsBFTNtABlAEJ7FCFrS?usp=sharing).
