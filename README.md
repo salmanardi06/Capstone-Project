@@ -2,7 +2,7 @@
 
 Website JelajahiJawa.id - Kaleidoskop Kebudayaan Jawa
 # Pendahulan
-![Beranda JelajahiJawa](images/beranda.png) <br>
+![Beranda JelajahiJawa](images/beranda1.png) <br>
 Situs web JelajahiJawa.id adalah platform online yang berfokus pada penyediaan informasi komprehensif  mengenai ada istiadat, tradisi, bahasa, dan nilai-nilai budaya dapat ditemukan di pulau Jawa, Indonesia. Situs ini dirancang untuk membantu masyarakat dalam mengakses informasi kebudayaan jawa dan melesteraikan budaya jawa.
 ## Fitur Utama
 1. 	Beranda:  Terdapat menu navigasi utama yang memudahkan pengguna untuk mengakses konten tentang kebudayaan jawa.
